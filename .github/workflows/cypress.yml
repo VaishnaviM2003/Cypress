@@ -28,7 +28,7 @@ jobs:
         run: npx cypress install
 
       - name: Run Cypress tests
-        run: npx cypress run --spec cypress/e2e/orangehrm-login.cy.js
+        run: npx cypress run --spec cypress/e2e/login-test.cy.js
         env:
           CYPRESS_baseUrl: https://opensource-demo.orangehrmlive.com
 

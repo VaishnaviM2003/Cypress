@@ -38,7 +38,6 @@ module.exports = defineConfig({
   screenshotOnRunFailure: true,        // Auto-screenshot on test failure
   screenshotsFolder: 'cypress/screenshots',
   video: true,                         // Record videos
-  videoUploadOnPasses: false,          // Skip uploading videos for passing runs
   videosFolder: 'cypress/videos',
   viewportWidth: 1280,                 // Consistent video size
   viewportHeight: 720,
