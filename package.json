@@ -1,0 +1,21 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "description": "Cypress project with Mochawesome reporting",
+  "scripts": {
+    "cypress:run": "cypress run --reporter cypress-mochawesome-reporter",
+    "merge": "npx mochawesome-merge cypress/reports/.jsons/*.json > cypress/reports/mochawesome.json",
+    "report": "npm run merge && npx mochawesome-report-generator cypress/reports/mochawesome.json --reportDir cypress/reports --inline",
+    "reports": "npm run report && start cypress/reports/mochawesome.html",
+    "test:report": "npm run cypress:run && npm run report",
+    "open:report": "start cypress/reports/cypress/reports/mochawesome.html"
+  },
+  "devDependencies": {
+    "cypress": "^15.2.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mocha": "^11.7.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0"
+  }
+}
