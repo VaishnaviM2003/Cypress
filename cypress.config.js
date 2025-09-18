@@ -18,7 +18,7 @@ module.exports = defineConfig({
 }); */
 
 //Screenshot and Video settings added
-/*const { defineConfig } = require("cypress");
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
@@ -45,7 +45,7 @@ module.exports = defineConfig({
 }); 
 
 //Error handling settings added
-const { defineConfig } = require("cypress");
+/*const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
@@ -71,8 +71,9 @@ module.exports = defineConfig({
   videoUploadOnPasses: false,
   videosFolder: 'cypress/videos',
   viewportWidth: 1280,
-  viewportHeight: 720,*/
+  viewportHeight: 720, */
 
+  /*
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
@@ -99,3 +100,4 @@ module.exports = defineConfig({
     autoOpen: false
   },
 });
+*/
